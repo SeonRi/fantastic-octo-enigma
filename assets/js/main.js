@@ -1,23 +1,23 @@
-$(function() {
-    // Cache the window object
+// $(function() {
+//     // Cache the window object
 
-    // Parallax background effect
-    var bg = $('#hero');
-    $(window).scroll(function() {
-        var x = $(this).scrollTop();
-        bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-
-
-
-        if ($(this).scrollTop() > $('#hero').height() / 35) {
-            $('.navbar').addClass('solid');
-        } else {
-            $('.navbar').removeClass('solid');
-        }
-    });
+//     // Parallax background effect
+//     var bg = $('#hero');
+//     $(window).scroll(function() {
+//         var x = $(this).scrollTop();
+//         bg.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
 
 
-});
+
+//         if ($(this).scrollTop() > $('#hero').height() / 35) {
+//             $('.navbar').addClass('solid');
+//         } else {
+//             $('.navbar').removeClass('solid');
+//         }
+//     });
+
+
+// });
 // $('section[data-type="background"]').each(function() {
 //     var $bgobj = $(this); // assigning the object
 

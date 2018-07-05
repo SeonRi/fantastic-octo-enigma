@@ -105,6 +105,12 @@
         padding: 0 0.9375rem 0 0.625rem;
         height: 100%;
     }
+    
+    @media (max-width: 330px) {
+        .navbar-custom img {
+            padding: 0;
+        }
+    }
     /* .navbar-custom .navbar-text:hover {
     color: rgb(163, 150, 233);
 } */
@@ -234,16 +240,12 @@
         font-weight: bold;
     }
     
-    #info1 .info-right h2 {
+    #info .info-right h2 {
         /* font-weight: 500; */
         text-transform: uppercase;
     }
     
-    #info1 .info-right ul {
-        margin-top: 5%;
-    }
-    
-    #info1 .info-right ul li {
+    #info .info-right ul li {
         list-style: circle;
         font-size: 1.125rem;
         text-transform: lowercase;
@@ -253,36 +255,91 @@
     }
     
     @media (max-width: 767px) {
-        #info1 {
+        #info {
             padding: 5rem 0 4rem 0;
         }
-        #info1 .info-right {
-            margin-top: 30%;
+        #info .info-right {
+            margin-top: 20%;
         }
-        #info1 .info-right h2 {
+        #info .info-right h2 {
             text-align: center;
         }
-        /* #info1 .info-right ul li {
+        /* #info .info-right ul li {
             list-style: none;
         } */
     }
     
     @media (min-width: 768px) {
-        #info1 .info-right {
-            margin-top: 50%;
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
+        #info {
+            padding-top: 1.875rem;
+            padding-bottom: 2rem;
         }
-        #info1 .info-left img {
+        #info .info-right {
+            margin-top: 18%;
+        }
+        #info .info-left img {
             width: 100%;
-            margin-top: 50%;
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
+            /* margin-top: 30%; */
         }
+    }
+    
+    @media (min-width: 992px) {
+        #info {
+            padding-top: 1.875rem;
+            padding-bottom: 2rem;
+        }
+        #info .info-right {
+            margin-top: 30%;
+        }
+        #info .info-left img {
+            width: 100%;
+        }
+    }
+    /* Small devices (landscape phones, 576px and up) */
+    
+    #content {
+        /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-md-768.jpg') no-repeat; */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.58) 30%, rgba(0, 0, 0, 0.8)), url('../img/768.jpg') no-repeat;
+        background-size: cover;
+        color: #fff;
+        width: 100%;
+    }
+    /* Medium devices (tablets, 768px and up) */
+    
+    @media (min-width: 768px) {
+        #content {
+            /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-md-768.jpg') no-repeat fixed; */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8)), url('../img/768.jpg') no-repeat;
+            background-size: cover;
+        }
+    }
+    /* Large devices (desktops, 992px and up) */
+    
+    @media (min-width: 992px) {
+        #content {
+            /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-lg-992.jpg') no-repeat; */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8)), url('../img/992.jpg') no-repeat;
+            background-size: cover;
+        }
+    }
+    /* Extra large devices (large desktops, 1200px and up) */
+    
+    @media (min-width: 1200px) {
+        #content {
+            /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-xl.jpg') no-repeat; */
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.95)), url('../img/bg.jpg') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    }
+    
+    #content .content-inner {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+    
+    #content h1 {
+        font-size: 2.125rem;
     }
