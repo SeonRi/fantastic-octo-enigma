@@ -299,10 +299,26 @@
     
     #content {
         /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-md-768.jpg') no-repeat; */
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.58) 30%, rgba(0, 0, 0, 0.8)), url('../img/768.jpg') no-repeat;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.45) 30%, rgba(0, 0, 0, 0.8)), url('../img/768.jpg') no-repeat;
         background-size: cover;
         color: #fff;
         width: 100%;
+    }
+    
+    #content .content-inner {
+        padding: 4rem 1rem;
+        margin-top: 30%;
+        margin-bottom: 30%;
+        text-align: center;
+    }
+    
+    #content h1 {
+        font-size: 2.125rem;
+    }
+    
+    #content p {
+        margin-top: 1.125rem;
+        letter-spacing: 0.03rem;
     }
     /* Medium devices (tablets, 768px and up) */
     
@@ -320,6 +336,13 @@
             /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-lg-992.jpg') no-repeat; */
             background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.8)), url('../img/992.jpg') no-repeat;
             background-size: cover;
+            height: 60vh;
+        }
+        #content .content-inner {
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            /* margin-top: 50%; */
+            /* margin-bottom: 10%; */
         }
     }
     /* Extra large devices (large desktops, 1200px and up) */
@@ -327,19 +350,33 @@
     @media (min-width: 1200px) {
         #content {
             /* background: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, rgba(146, 127, 84, 0.99)), url('../img/bg-xl.jpg') no-repeat; */
-            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.95)), url('../img/bg.jpg') no-repeat;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.95)), url('../img/bg-xl.jpeg') no-repeat;
             background-size: cover;
             height: 100vh;
         }
+        #content .content-inner {
+            /* padding-top: 15rem;
+            padding-bottom: 15rem; */
+            margin-top: 50%;
+            /* margin-bottom: 10%; */
+        }
+        #content h1 {
+            font-size: 2.75rem;
+            letter-spacing: 0.1rem;
+        }
     }
     
-    #content .content-inner {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
-        margin-top: 30%;
-        margin-bottom: 30%;
-    }
-    
-    #content h1 {
-        font-size: 2.125rem;
+    @media (min-width: 1600px) {
+        #content {
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0.95)), url('../img/bg-xl.jpeg') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        #content .content-inner {
+            margin-top: 70%;
+        }
+        #content h1 {
+            font-size: 3.125rem;
+            letter-spacing: 0.1rem;
+        }
     }
